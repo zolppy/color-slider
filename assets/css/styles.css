@@ -20,7 +20,7 @@ body {
   padding: 20px;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, .2);
   border-radius: 10px;
-  width: 360px;
+  width: 340px;
 }
 
 #description {
@@ -39,7 +39,7 @@ span {
 }
 
 input[type="range"] {
-  width: 93.3%;
+  width: 92.9%;
   margin-left: 5px;
 }
 
