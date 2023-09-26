@@ -16,22 +16,29 @@
 <body class="centered">
   <main>
     <div id="container" class="centered">
-      <div class="wrapper">
-        <span>R</span>
-        <input type="range" id="red" min="0" max="255" value="0" />
+      <p id="description">Combine diferentes valores para R, G e B e copie o código RGB ou hexadecimal gerado da cor.</p>
+      <div id="colors">
+        <div class="color-container" id="r-container">
+          <span>R</span>
+          <input type="range" id="r-slider" min="0" max="255" value="0" />
+        </div>
+        <div class="color-container" id="g-container">
+          <span>G</span>
+          <input type="range" id="g-slider" min="0" max="255" value="0" />
+        </div>
+        <div class="color-container" id="b-container">
+          <span>B</span>
+          <input type="range" id="b-slider" min="0" max="255" value="0" />
+        </div>
       </div>
-      <div class="wrapper">
-        <span>G</span>
-        <input type="range" id="green" min="0" max="255" value="0" />
-      </div>
-      <div class="wrapper">
-        <span>B</span>
-        <input type="range" id="blue" min="0" max="255" value="0" />
-      </div>
-      <div id="output-wrapper">
-        <input type="text" id="output" value="rbg(0, 0, 0);" />
-        <button type="button" id="copy-btn">
-          <i id="copy-icon" class="bi bi-clipboard"></i>
+      <div id="output-container">
+        <input type="text" id="rgb-output" value="rbg(0, 0, 0);" />
+        <button type="button" class="copy-btn" id="rgb-output-copy-button">
+          <i id="rgb-output-copy-icon" class="bi bi-clipboard"></i>
+        </button>
+        <input type="text" id="hex-output" value="#000000;" />
+        <button type="button" class="copy-btn" id="hex-output-copy-button">
+          <i id="hex-output-copy-icon" class="bi bi-clipboard"></i>
         </button>
       </div>
     </div>

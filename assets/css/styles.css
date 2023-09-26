@@ -16,32 +16,44 @@ body {
 
 #container {
   background-color: #efefef;
-  padding: 20px 0;
+  padding: 20px;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, .2);
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
-  width: 400px;
+  width: 380px;
+}
+
+#description {
+  text-align: justify;
+  font-size: .8em;
+}
+
+#colors {
+  margin-top: 20px;
+  width: 100%;
 }
 
 input[type="range"] {
-  width: 300px;
+  width: 92.6%;
   margin-left: 5px;
-  margin-top: 25px;
 }
 
-#output-wrapper {
-  font-family: monospace;
+#g-container {
   margin: 20px 0;
+}
+
+#output-container {
+  font-family: monospace;
+  margin-bottom: 5px;
   background-color: #0075ff;
   color: #efefef;
   padding: 10px 0;
   border-radius: 5px;
-  width: 80%;
   text-align: center;
 }
 
-#output {
+input[type="text"] {
   border: none;
   border-radius: 5px;
   padding: 5px 0;
@@ -52,16 +64,24 @@ input[type="range"] {
   font-weight: bold;
 }
 
-#copy-btn {
+#output-container {
+  margin-top: 20px;
+}
+
+#hex-output {
+  margin-top: 5px;
+}
+
+.copy-btn {
   border: 1px solid transparent;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
-#copy-btn:hover {
+.copy-btn:hover {
   cursor: pointer;
 }
 
-#copy-btn:active {
+.copy-btn:active {
   border-color: #333;
 }
