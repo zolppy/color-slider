@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RGB Color Slider</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Reset de estilos -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <!-- Meus arquivos-fonte -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body class="centered">
+  <main>
+    <div id="container" class="centered">
+      <div class="wrapper">
+        <span>R</span>
+        <input type="range" id="red" min="0" max="255" value="0" />
+      </div>
+      <div class="wrapper">
+        <span>G</span>
+        <input type="range" id="green" min="0" max="255" value="0" />
+      </div>
+      <div class="wrapper">
+        <span>B</span>
+        <input type="range" id="blue" min="0" max="255" value="0" />
+      </div>
+      <div id="output-wrapper">
+        <input type="text" id="output" value="rbg(0, 0, 0);" />
+        <button type="button" id="copy-btn">
+          <i id="copy-icon" class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
