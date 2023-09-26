@@ -38,7 +38,7 @@ const updateBackgroundColor = (RValue, GValue, BValue) => {
 }
 
 const getColorValues = () => {
-  /* Conversão simples de string para número. É semelhante a usar "a = parseInt(b);" */
+  /* Conversão simples de string para número " */
   let RValue = +RSliderElement.value;
   let GValue = +GSliderElement.value;
   let BValue = +BSliderElement.value;
@@ -48,7 +48,7 @@ const getColorValues = () => {
   updateHexOutput(RValue, GValue, BValue);
 }
 
-/* Copia código de cor RGB à área de transferência */
+/* Copia código de cor RGB para a área de transferência */
 const copyRBG = () => {
   const RGBOutputElement = document.querySelector('#rgb-output');
   const RGBOutputCopyIconElement = document.querySelector('#rgb-output-copy-button');
@@ -57,7 +57,6 @@ const copyRBG = () => {
   /* Necessário para que a cópia funcione */
   RGBOutputElement.focus(); /* Só é possível utilizar "focus" em inputs */
 
-  /* Gera uma promessa, se for cumprida, faça algo, caso contrário, capture o erro e imprima-o no console */
   navigator.clipboard.writeText(text)
   .then(() => {
     RGBOutputCopyIconElement.classList.replace('bi-clipboard', 'bi-clipboard-check');
@@ -70,6 +69,7 @@ const copyRBG = () => {
   });
 }
 
+/* Copia código de cor RGB para a área de transferência */
 const copyHex = () => {
   const HexOutputElement = document.querySelector('#hex-output');
   const HexOutputCopyIconElement = document.querySelector('#hex-output-copy-button');

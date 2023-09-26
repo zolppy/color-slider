@@ -5,6 +5,7 @@ body {
   color: #333;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .centered {
@@ -18,15 +19,18 @@ body {
   background-color: #efefef;
   padding: 20px;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, .2);
-  font-size: 20px;
-  font-weight: bold;
   border-radius: 10px;
-  width: 380px;
+  width: 360px;
 }
 
 #description {
   text-align: justify;
-  font-size: .8em;
+  letter-spacing: .1em;
+  line-height: 1.2em;
+}
+
+span {
+  font-weight: bold;
 }
 
 #colors {
@@ -35,16 +39,17 @@ body {
 }
 
 input[type="range"] {
-  width: 92.6%;
+  width: 93.3%;
   margin-left: 5px;
 }
 
 #g-container {
-  margin: 20px 0;
+  /* Colocar "margin: 20px 0;" gera um bug */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #output-container {
-  font-family: monospace;
   margin-bottom: 5px;
   background-color: #0075ff;
   color: #efefef;
