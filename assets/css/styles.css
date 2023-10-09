@@ -1,92 +1,85 @@
 @charset "UTF-8";
 
-body {
-  background-color: #000;
-  color: #333;
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
+:root {
+  --soft-white: #efefef;
+  --soft-black: #333;
 }
 
-.centered {
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  color: var(--soft-black);
+}
+
+body {
+  height: 100vh;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 #container {
-  background-color: #efefef;
-  padding: 20px;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, .2);
+  background-color: var(--soft-white);
+  box-shadow: 2px 7px 10px rgba(0, 0, 0, .5);
   border-radius: 10px;
-  width: 340px;
-}
-
-#description {
-  text-align: justify;
-  letter-spacing: .1em;
-  line-height: 1.2em;
-}
-
-span {
-  font-weight: bold;
+  width: 300px;
+  padding: 15px;
 }
 
 #colors {
-  margin-top: 20px;
-  width: 100%;
+  margin: 20px 0;
 }
 
-input[type="range"] {
-  width: 92.9%;
+.color-container {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.color-container input {
   margin-left: 5px;
+  display: flex;
+  flex: 1;
 }
 
 #g-container {
-  /* Colocar "margin: 20px 0;" gera um bug */
+  /* Por "margin: 20px 0;" gera bug */
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 #output-container {
-  margin-bottom: 5px;
-  background-color: #0075ff;
-  color: #efefef;
-  padding: 10px 0;
-  border-radius: 5px;
-  text-align: center;
+  background-color: #0359c7;
+  padding: 10px;
+  border-radius: 7px;
 }
 
-input[type="text"] {
-  border: none;
-  border-radius: 5px;
-  padding: 5px 0;
-  text-align: center;
-  font-size: 16px;
-  background-color: transparent;
-  color: #efefef;
-  font-weight: bold;
+#rgb-output-container,
+#hex-output-container {
+  display: flex;
 }
 
-#output-container {
-  margin-top: 20px;
-}
-
-#hex-output {
+#hex-output-container {
   margin-top: 5px;
 }
 
+#rgb-output,
+#hex-output {
+  background-color: inherit;
+  color: var(--soft-white);
+  width: 90%;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
 .copy-btn {
-  border: 1px solid transparent;
-  padding: 5px 10px;
+  border: none;
   border-radius: 5px;
 }
 
 .copy-btn:hover {
   cursor: pointer;
-}
-
-.copy-btn:active {
-  border-color: #333;
+  transform: scale(.95);
 }

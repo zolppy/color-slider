@@ -60,7 +60,7 @@ const copyRBG = () => {
   navigator.clipboard.writeText(text)
   .then(() => {
     RGBOutputCopyIconElement.classList.replace('bi-clipboard', 'bi-clipboard-check');
-    alert('Copiado para área de transferência!');
+    alert('Código RGB copiado para área de transferência!');
   })
   /* Não há tratamento de erros */
   .catch((error) => {
@@ -80,7 +80,7 @@ const copyHex = () => {
   navigator.clipboard.writeText(text)
   .then(() => {
     HexOutputCopyIconElement.classList.replace('bi-clipboard', 'bi-clipboard-check');
-    alert('Copiado para área de transferência!');
+    alert('Código hexadecimal copiado para área de transferência!');
   })
   .catch((error) => {
     console.error('Falha ao copiar:', error);
